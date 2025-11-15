@@ -9,18 +9,18 @@ public class BinarySearch {
         System.out.println("----------------------------------------------------------");
 
         for (int size : SharedArrays.SIZES) {
-            int[] arr = SharedArrays.getArray(size); // fresh copy
+            int[] arr = SharedArrays.getArray(size); 
 
-            // Measure sorting time (optional to show)
+           
             long sortStart = System.nanoTime();
             Arrays.sort(arr);
             long sortEnd = System.nanoTime();
             double sortMs = (sortEnd - sortStart) / 1_000_000.0;
 
-            // choose target (exists)
+            
             int target = arr[arr.length - 1];
 
-            // Measure only binary search time
+          
             long start = System.nanoTime();
             int found = binarySearch(arr, target);
             long end = System.nanoTime();
