@@ -1,6 +1,7 @@
 // Member3 change - test
 public class BubbleSort {
 
+	//Main Method
     public static void main(String[] args) {
         System.out.println("Algorithm: Bubble Sort (measure sorting time)");
         System.out.println("Input Size | Time (ms) | Sorted?");
@@ -18,6 +19,7 @@ public class BubbleSort {
         }
     }
 
+    //Bubble Sort Method
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         boolean swapped;
@@ -35,6 +37,7 @@ public class BubbleSort {
         }
     }
 
+    //validation (Check if Sorted)
     private static boolean isSorted(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             if (arr[i - 1] > arr[i]) return false;
